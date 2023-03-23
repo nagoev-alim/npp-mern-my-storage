@@ -4,7 +4,12 @@
 -----
 
 #### 📦 Previews
-![App Screenshot](client/public/assets/images/preview****/preview01.png)
+![App Screenshot](client/public/assets/images/preview/preview01.png)
+![App Screenshot](client/public/assets/images/preview/preview02.png)
+![App Screenshot](client/public/assets/images/preview/preview03.png)
+![App Screenshot](client/public/assets/images/preview/preview04.png)
+![App Screenshot](client/public/assets/images/preview/preview05.png)
+![App Screenshot](client/public/assets/images/preview/preview06.png)
 
 #### 📦 Dependencies(tech-stacks)
 | Client-side                                                          | Description                                                 |

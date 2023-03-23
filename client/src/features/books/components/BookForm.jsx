@@ -112,8 +112,8 @@ export default function BookForm({ home }) {
         <FormGroup
           type='number'
           name='numberPages'
-          label='Enter Number Of Pages'
-          placeholder='ISBN'
+          label='Number Of Pages'
+          placeholder='Enter Number Of Pages'
           register={register}
         />
         <FormGroup

@@ -125,7 +125,7 @@ export default function MovieForm({ home }) {
           <input multiple={false} type='file' name='poster' className='hidden' {...register('poster')} />
           <RiImageAddFill size={70} />
         </label>
-        <button disabled={!isValid} className='btn btn-primary'>Add Book</button>
+        <button disabled={!isValid} className='btn btn-primary'>Add Movie</button>
         {Object.keys(errors).length !== 0 && (
           <div className='border-2 rounded border-red-600 p-2 bg-red-50 max-w-max'>
             <ErrorMessage errors={errors} field={'name'} />
