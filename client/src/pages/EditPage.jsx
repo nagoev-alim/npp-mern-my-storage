@@ -61,7 +61,7 @@ export default function EditPage() {
       setValue('publisher', book.publisher);
       setValue('series', book.series);
       setValue('yearPublication', book.yearPublication);
-      setValue('dateReading', new Date(book.dateReading).toISOString().substring(0, 10));
+      book.dateReading && setValue('dateReading', new Date(book.dateReading).toISOString().substring(0, 10));
       setValue('status', book.status);
       setValue('isbn', book.isbn);
       setValue('numberPages', book.numberPages);
@@ -77,7 +77,7 @@ export default function EditPage() {
       setValue('directed', movie.directed);
       setValue('time', movie.time);
       setValue('review', movie.review);
-      setValue('dateViewing', new Date(movie.dateViewing).toISOString().substring(0, 10));
+      movie.dateViewing && setValue('dateViewing', new Date(movie.dateViewing).toISOString().substring(0, 10));
       setValue('status', movie.status);
     }
   }, [id, dispatch, category, movie, book]);
@@ -127,9 +127,11 @@ export default function EditPage() {
         <FormGroup type='number' name='yearProduction' label='Year Of Publication'
                    placeholder='Enter Movie Publication Year' register={register} />
         <FormGroup type='text' name='country' label='Country' placeholder='Enter Country' register={register} />
-        <FormGroup type='text' name='genre' label='Genre' placeholder='For example: thriller, drama' register={register} />
+        <FormGroup type='text' name='genre' label='Genre' placeholder='For example: thriller, drama'
+                   register={register} />
         <FormGroup type='text' name='slogan' label='Slogan' placeholder='Enter Movie Slogan' register={register} />
-        <FormGroup type='text' name='directed' label='Directed' placeholder='Enter Movie Directed' register={register} />
+        <FormGroup type='text' name='directed' label='Directed' placeholder='Enter Movie Directed'
+                   register={register} />
         <FormGroup type='text' name='time' label='Time' placeholder='Enter Movie Time' register={register} />
         <FormGroup type='date' name='dateViewing' label='Date Of Viewing' register={register} />
         <label className='form-group'>

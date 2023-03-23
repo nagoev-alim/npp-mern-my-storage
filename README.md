@@ -4,12 +4,7 @@
 -----
 
 #### 📦 Previews
-![App Screenshot](client/public/assets/images/preview/preview01.png)
-![App Screenshot](client/public/assets/images/preview/preview02.png)
-![App Screenshot](client/public/assets/images/preview/preview03.png)
-![App Screenshot](client/public/assets/images/preview/preview04.png)
-![App Screenshot](client/public/assets/images/preview/preview05.png)
-![App Screenshot](client/public/assets/images/preview/preview06.png)
+![App Screenshot](client/public/assets/images/preview****/preview01.png)
 
 #### 📦 Dependencies(tech-stacks)
 | Client-side                                                          | Description                                                 |
@@ -23,14 +18,15 @@
 | [@uiball/loaders](https://github.com/GriffinJohnston/uiball-loaders) | Lightweight loaders & spinners for your next React project. |
 | [generate-react-cli](https://github.com/arminbro/generate-react-cli) | Generate React CLI                                          |
 
-| Server-side                                                         | Description                                                                                                                |
-|---------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| [bcryptjs](https://github.com/kelektiv/node.bcrypt.js)              | A library to help you hash passwords.                                                                                      |
-| [cors](github.com/expressjs/cors)                                   | CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options. |
-| [dotenv](github.com/motdotla/dotenv)                                | Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env.                     |
-| [express](github.com/expressjs/express)                             | Fast, opinionated, minimalist web framework for Node.js.                                                                   |
-| [jsonwebtoken](github.com/auth0/node-jsonwebtoken)                  | An implementation of JSON Web Tokens.                                                                                      |
-| [mongoose](github.com/Automattic/mongoose)                          | Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment.                                |
+| Server-side                                            | Description                                                                                                                |
+|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
+| [bcryptjs](https://github.com/kelektiv/node.bcrypt.js) | A library to help you hash passwords.                                                                                      |
+| [cors](github.com/expressjs/cors)                      | CORS is a node.js package for providing a Connect/Express middleware that can be used to enable CORS with various options. |
+| [dotenv](github.com/motdotla/dotenv)                   | Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env.                     |
+| [express](github.com/expressjs/express)                | Fast, opinionated, minimalist web framework for Node.js.                                                                   |
+| [jsonwebtoken](github.com/auth0/node-jsonwebtoken)     | An implementation of JSON Web Tokens.                                                                                      |
+| [mongoose](github.com/Automattic/mongoose)             | Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment.                                |
+| [nodemailer](https://nodemailer.com/about/)            | Nodemailer is a module for Node.js applications to allow easy as cake email sending.                                       |
 
 #### 📦 Routes:
 
@@ -43,12 +39,25 @@
 | `POST` | `/users/refresh`  | Refresh JWT Token Access Token |
 | `GET`  | `/users/`         | Get User Info                  |
 | `PUT`  | `/users/`         | Update User Info               |
+| `GET`  | `/users/verify`   | Verify User                    |
 
-**✏️ Customer:**
+**✏️ Movies:**
 
-| Method   | Route  | Description   |
-|----------|--------|---------------|
-| `POST`   | `/`    | Create Todo   |
-| `GET`    | `/`    | Get all todos |
-| `PUT`    | `/:id` | Update todo   |
-| `DELETE` | `/:id` | Delete todo   |
+| Method   | Route         | Description      |
+|----------|---------------|------------------|
+| `POST`   | `/movies`     | Create Movie     |
+| `GET`    | `/movies`     | Get all Movies   |
+| `GET`    | `/movies/:id` | Get single Movie |
+| `PUT`    | `/movies/:id` | Update Movie     |
+| `DELETE` | `/movies/:id` | Delete Movie     |
+
+**✏️ Books:**
+
+| Method   | Route        | Description     |
+|----------|--------------|-----------------|
+| `POST`   | `/books`     | Create Books    |
+| `GET`    | `/books`     | Get all Book    |
+| `GET`    | `/books/:id` | Get single Book |
+| `PUT`    | `/books/:id` | Update Book     |
+| `DELETE` | `/books/:id` | Delete Book     |
+

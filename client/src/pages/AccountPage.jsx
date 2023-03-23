@@ -37,7 +37,7 @@ export default function AccountPage() {
     setValue('username', user.username);
     setValue('email', user.email);
     setValue('phone', user.phone);
-    setValue('dob', new Date(user.dob).toISOString().substring(0, 10));
+    user.dob && setValue('dob', new Date(user.dob).toISOString().substring(0, 10));
     setValue('city', user.address.city);
     setValue('country', user.address.country);
     setValue('zipCode', user.address.zipCode);
